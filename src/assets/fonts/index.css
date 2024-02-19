@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'IranYekan';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('./iranyekan/IRANYekanX-Medium.woff') format('woff');
+  }
+  @font-face {
+    font-family: 'IranYekan';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('./iranyekan/IRANYekanX-Bold.woff') format('woff');
+  }
+
+  @font-face {
+    font-family: 'IranYekan';
+    font-style: normal;
+    font-weight: 100;
+    font-display: swap;
+    src: url('./iranyekan/IRANYekanX-Light.woff') format('woff');
+  }
+  @font-face {
+  font-family: 'Shabnam';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./shabnam/shabnam.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Shabnam';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('./shabnam/shabnam-bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Shabnam';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url('./shabnam/shabnam-light.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Yekan';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./yekan/yekan.woff') format('woff');
+}
