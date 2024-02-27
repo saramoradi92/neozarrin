@@ -12,9 +12,8 @@
         خدماتی منحصر به فرد برای کاربران زرین‌پال به سادگی فراهم شده است.
       </p>
       <div class="flex justify-center">
-        <TheButton class="gap-x-2" size="lg">
+        <TheButton size="lg" has-arrow>
           <router-link :to="{ name: 'download' }"> دانلود رایگان </router-link>
-          <IconArrow size="24" />
         </TheButton>
       </div>
       <div class="mt-16 flex justify-center">

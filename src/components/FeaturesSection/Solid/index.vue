@@ -72,7 +72,7 @@ li {
   @apply p-8;
 
   .icon-wrapper {
-    @apply text-2xl bg-cont-dim p-2 rounded-xl bg-white;
+    @apply text-2xl bg-cont-dim p-2 rounded-xl bg-cont-default;
   }
 }
 </style>

@@ -1,26 +1,97 @@
-@font-face {
-    font-family: 'IranYekan';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url('./iranyekan/IRANYekanX-Medium.woff') format('woff');
-  }
-  @font-face {
-    font-family: 'IranYekan';
-    font-style: normal;
-    font-weight: 700;
-    font-display: swap;
-    src: url('./iranyekan/IRANYekanX-Bold.woff') format('woff');
-  }
+/* Iran Yekan */
 
-  @font-face {
-    font-family: 'IranYekan';
-    font-style: normal;
-    font-weight: 100;
-    font-display: swap;
-    src: url('./iranyekan/IRANYekanX-Light.woff') format('woff');
-  }
-  @font-face {
+@font-face {
+  font-family: 'IranYekan';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url('./iranyekan/IRANYekanX-Thin.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'IranYekan';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url('./iranyekan/IRANYekanX-UltraLight.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'IranYekan';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url('./iranyekan/IRANYekanX-Light.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'IranYekan';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url('./iranyekan/IRANYekanX-Light.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'IranYekan';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./iranyekan/IRANYekanX-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'IranYekan';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('./iranyekan/IRANYekanX-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'IranYekan';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('./iranyekan/IRANYekanX-DemiBold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'IranYekan';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('./iranyekan/IRANYekanX-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'IranYekan';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url('./iranyekan/IRANYekanX-ExtraBold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'IranYekan';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url('./iranyekan/IRANYekanX-Black.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'IranYekan';
+  font-style: normal;
+  font-weight: 950;
+  font-display: swap;
+  src: url('./iranyekan/IRANYekanX-ExtraBlack.woff') format('woff');
+}
+
+
+/* Shabnam */
+
+@font-face {
   font-family: 'Shabnam';
   font-style: normal;
   font-weight: 400;
@@ -42,12 +113,4 @@
   font-weight: 100;
   font-display: swap;
   src: url('./shabnam/shabnam-light.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Yekan';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url('./yekan/yekan.woff') format('woff');
 }

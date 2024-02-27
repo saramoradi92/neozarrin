@@ -91,10 +91,10 @@
       </swiper>
     </div>
     <div class="mt-12 flex justify-center gap-2 text-2xl">
-      <button class="bg-white rounded-full p-3" @click="previousSlide">
+      <button class="bg-cont-default rounded-full p-3" @click="previousSlide">
         <IconChevron class="-rotate-90" />
       </button>
-      <button class="bg-white rounded-full p-3" @click="nextSlide">
+      <button class="bg-cont-default rounded-full p-3" @click="nextSlide">
         <IconChevron class="rotate-90" />
       </button>
     </div>

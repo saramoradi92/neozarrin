@@ -3,7 +3,7 @@
     <div class="flex flex-col items-center gap-y-5">
       <h2>همکاران ما</h2>
       <p>نگاهی به دستاوردهای نئوزرین در کنار شما</p>
-      <ul class="w-full grid grid-cols-2 gap-1 mt-12 lg:grid-cols-4 rounded-xl bg-white">
+      <ul class="w-full grid grid-cols-2 gap-1 mt-12 lg:grid-cols-4 rounded-xl bg-cont-default">
         <ColleaguesSectionItem
           v-for="colleague in colleagues"
           :title="colleague.title"

@@ -1,6 +1,6 @@
 <template>
   <form @submit.prevent>
-    <div class="relative bg-white border rounded-full flex">
+    <div class="relative bg-cont-default border rounded-full flex">
       <input
         type="tel"
         dir="rtl"

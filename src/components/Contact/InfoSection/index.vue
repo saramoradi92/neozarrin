@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="bg-white rounded-xl p-10 flex flex-col gap-y-10 h-full">
+    <div class="bg-cont-default rounded-xl p-10 flex flex-col gap-y-10 h-full">
       <InfoSectionItem>
         <template #icon><IconEmail /></template>
         <template #title>ایمیل</template>

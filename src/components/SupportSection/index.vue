@@ -16,9 +16,8 @@
           </p>
         </div>
         <div>
-          <TheButton size="lg" variant="white" class="gap-x-2">
+          <TheButton size="lg" variant="cont" has-arrow>
             درخواست پشتیبانی
-            <IconArrow />
           </TheButton>
         </div>
       </div>

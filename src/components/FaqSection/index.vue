@@ -3,69 +3,73 @@
     <div class="flex flex-col items-center gap-y-5">
       <h2 class="text-center">سوالات متداول</h2>
       <p class="text-center">پرتکرارترین سوالاتی که از ما پرسیده می‌شود</p>
-      <Accordions class="gap-y-2">
-        <AccordionItem>
+      <TheAccordions icon-handler="plus" class="gap-y-2">
+        <AccordionItem v-for="item in accordion.items" :key="item.id" :is-expanded="item.isExpanded" @click="toggleExpanding(item)">
           <template #header>
-            <h4>در چه بانکهایی میشه حساب باز کرد؟</h4>
+            <h4>{{item.title}}</h4>
           </template>
-          <p>
-            در حال حاضر فقط بانک اینده .ولی به زودی امکان افتتاح حساب بانک ایران زمین و چند بانک
-            دیگه هم فراهم خواهد شد.
-          </p>
+          <p>{{item.content}}</p>
         </AccordionItem>
-        <AccordionItem>
-          <template #header>
-            <h4>برای افتتاح حساب چه مدارکی لازم است؟</h4>
-          </template>
-          <p>
-            در حال حاضر فقط بانک اینده .ولی به زودی امکان افتتاح حساب بانک ایران زمین و چند بانک
-            دیگه هم فراهم خواهد شد.
-          </p>
-        </AccordionItem>
-        <AccordionItem>
-          <template #header>
-            <h4>دریافت کارت بانکی به چه شکل هست؟</h4>
-          </template>
-          <p>
-            در حال حاضر فقط بانک اینده .ولی به زودی امکان افتتاح حساب بانک ایران زمین و چند بانک
-            دیگه هم فراهم خواهد شد.
-          </p>
-        </AccordionItem>
-        <AccordionItem>
-          <template #header>
-            <h4>چگونه با پشتیبانی زرین‌پال تماس بگیرم؟</h4>
-          </template>
-          <p>
-            در حال حاضر فقط بانک اینده .ولی به زودی امکان افتتاح حساب بانک ایران زمین و چند بانک
-            دیگه هم فراهم خواهد شد.
-          </p>
-        </AccordionItem>
-        <AccordionItem>
-          <template #header>
-            <h4>ایا امکان استفاده به صورت وب سرویس هم هست؟</h4>
-          </template>
-          <p>
-            در حال حاضر فقط بانک اینده .ولی به زودی امکان افتتاح حساب بانک ایران زمین و چند بانک
-            دیگه هم فراهم خواهد شد.
-          </p>
-        </AccordionItem>
-      </Accordions>
+      </TheAccordions>
     </div>
   </HomeSectionWrapper>
 </template>
 
 <script>
 import HomeSectionWrapper from '@/components/Home/Section/index.vue'
-import Accordions from '@/components/Accordions/index.vue'
-import AccordionItem from '@/components/Accordions/Item/index.vue'
+import TheAccordions from '@/components/TheAccordions/index.vue'
+import AccordionItem from '@/components/TheAccordions/Item/index.vue'
 
 export default {
   name: 'FaqSection',
 
   components: {
     HomeSectionWrapper,
-    Accordions,
+    TheAccordions,
     AccordionItem
-  }
+  },
+  
+  data: () => ({
+    accordion: {
+      items: [
+        {
+          id: 1,
+          title: 'در چه بانکهایی میشه حساب باز کرد؟',
+          content: 'در حال حاضر فقط بانک اینده .ولی به زودی امکان افتتاح حساب بانک ایران زمین و چند بانک دیگه هم فراهم خواهد شد.',
+          isExpanded: false,
+        },
+        {
+          id: 2,
+          title: 'برای افتتاح حساب چه مدارکی لازم است؟',
+          content: 'در حال حاضر فقط بانک اینده .ولی به زودی امکان افتتاح حساب بانک ایران زمین و چند بانک دیگه هم فراهم خواهد شد.',
+          isExpanded: false,
+        },
+        {
+          id: 3,
+          title: 'چگونه با پشتیبانی زرین‌پال تماس بگیرم؟',
+          content: 'در حال حاضر فقط بانک اینده .ولی به زودی امکان افتتاح حساب بانک ایران زمین و چند بانک دیگه هم فراهم خواهد شد.',
+          isExpanded: false,
+        },
+        {
+          id: 4,
+          title: 'ایا امکان استفاده به صورت وب سرویس هم هست؟',
+          content: 'در حال حاضر فقط بانک اینده .ولی به زودی امکان افتتاح حساب بانک ایران زمین و چند بانک دیگه هم فراهم خواهد شد.',
+          isExpanded: false,
+        },
+      ],
+    },
+  }),
+  
+  methods: {
+    toggleExpanding(item, isExpanded) {
+      const newExpanded = isExpanded === undefined ? !item.isExpanded : isExpanded
+      if (newExpanded) {
+        this.accordion.items.forEach((item) => {
+          item.isExpanded = false
+        })
+      }
+      item.isExpanded = newExpanded
+    },
+  },
 }
 </script>

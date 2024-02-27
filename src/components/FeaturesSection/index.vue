@@ -7,7 +7,7 @@
           با ویژگی‌ها و مزیت‌هایی کم‌نظیر نئوزرین، تجربه متفاوت از بانکداری الکترونیک خلق کرده‌ایم
         </p>
         <ul class="grid grid-cols-1 md:grid-cols-2 gap-5 mt-10 w-full">
-          <li class="bg-white">
+          <li class="bg-cont-default">
             <div class="flex gap-x-2 items-center">
               <div class="icon-wrapper">
                 <IconShieldCheckmark />
@@ -15,7 +15,7 @@
               <h3>امنیت پرداخت</h3>
             </div>
           </li>
-          <li class="bg-white">
+          <li class="bg-cont-default">
             <div class="flex gap-x-2 items-center">
               <div class="icon-wrapper">
                 <IconHandCard />
@@ -23,7 +23,7 @@
               <h3>استفاده آسان</h3>
             </div>
           </li>
-          <li class="bg-white">
+          <li class="bg-cont-default">
             <div class="flex gap-x-2 items-center">
               <div class="icon-wrapper">
                 <IconSupport24 />
@@ -31,7 +31,7 @@
               <h3>پشتیبانی ۲۴ ساعته</h3>
             </div>
           </li>
-          <li class="bg-white">
+          <li class="bg-cont-default">
             <div class="flex gap-x-2 items-center">
               <div class="icon-wrapper">
                 <IconTimeCoins />

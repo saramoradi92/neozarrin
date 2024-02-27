@@ -1,6 +1,6 @@
 <template>
   <HomeSectionWrapper>
-    <div class="flex flex-col md:flex-row md:justify-between bg-white rounded-xl">
+    <div class="flex flex-col md:flex-row md:justify-between bg-cont-default rounded-xl">
       <div class="flex flex-col items-center gap-y-6 p-10 md:items-start">
         <h2>به خانواده‌ی نئو زرین بپیوندید</h2>
         <p>با دانلود اپلیکیشن نئوزرین از خدمات متنوع ما بهره‌مند شوید</p>

@@ -10,7 +10,12 @@
 
 body {
   font-family: 'IranYekan','Shabnam','Yekan', sans-serif;
-  font-size: 16px;
+  font-size: 18px;
+  line-height: 24px;
+
+  @screen md {
+    font-size: 20px;
+  }
 }
 
 input, textarea {
@@ -26,14 +31,45 @@ span {
 }
 
 h1 {
-  @apply font-black text-4xl md:text-5xl lg:text-6xl;
-  font-weight: bold;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 150%;
+
+  @screen md {
+    font-size: 48px;
+  }
+
+  @screen lg {
+    font-size: 56px;
+  }
 }
 
 h2 {
-  @apply font-black text-2xl md:text-3xl lg:text-4xl;
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 150%;
+
+  @screen md {
+    font-size: 32px;
+  }
+
+  @screen lg {
+    font-size: 36px;
+  }
 }
 
 h3 {
-  @apply font-black text-sm md:text-base lg:text-lg;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 150%;
+
+  @screen md {
+    font-size: 24px;
+  }
+}
+
+h4 {
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 150%;
 }

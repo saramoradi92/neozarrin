@@ -1,14 +1,15 @@
 <template>
-  <header class="flex border-b sticky top-0 z-1 bg-white">
+  <header class="flex border-b sticky top-0 bg-cont-default">
     <div class="mx-auto w-full max-w-screen-2xl py-3 px-4 flex justify-between">
       <router-link :to="{ name: 'home' }">
         <img src="@/assets/images/neozarin_logo.svg" alt="نئوزرین" />
       </router-link>
       <div class="flex gap-x-5">
-        <button
+        <TheButton
           v-if="isInHomePage"
+          variant="cont"
           class="font-bold"
-          :class="{ 'hidden lg:block': isInHomePage }"
+          :class="{ 'hidden lg:flex': isInHomePage }"
         >
           <router-link
             :to="{ name: 'contact' }"
@@ -17,7 +18,7 @@
           >
             راه‌های ارتباطی
           </router-link>
-        </button>
+        </TheButton>
         <TheButton v-if="isInHomePage">
           <router-link :to="{ name: 'download' }"> دانلود نئوزرین </router-link>
         </TheButton>
@@ -50,5 +51,6 @@ export default {
 
 <style scoped>
 header {
+  z-index: 2;
 }
 </style>
